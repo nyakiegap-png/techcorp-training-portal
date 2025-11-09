@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp Training Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the New Training Portal</h1>
+        <p>Enhance your skills with our new quarterly training programs.</p>
+    </header>
+
+    <section id="overview">
+        <h2>Training Overview</h2>
+        <p>Choose your sessions below and even suggest your own personalized training!</p>
+    </section>
+
+    <!-- Training Modules Section -->
+    <section id="training-modules">
+        <h2>Choose Your Training Modules</h2>
+        <div class="module">
+            <h3>4-hour Full Credit Training</h3>
+            <p>In-depth workshops covering advanced topics.</p>
+            <button onclick="signUp('Full Credit')">Sign Up</button>
+        </div>
+        <div class="module">
+            <h3>2-hour Half Credit Training</h3>
+            <p>Short, targeted training sessions for quick skill upgrades.</p>
+            <button onclick="signUp('Half Credit')">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Personal Training Suggestion Form -->
+    <section id="personal-training">
+        <h2>Suggest Your Personal Training</h2>
+        <form id="suggestion-form">
+            <label for="training-title">Training Title:</label>
+            <input type="text" id="training-title" name="training-title" required>
+            <br>
+            <label for="training-description">Training Description:</label>
+            <textarea id="training-description" name="training-description" required></textarea>
+            <br>
+            <button type="submit">Submit Training Idea</button>
+        </form>
+    </section>
+
+    <!-- Training Calendar Section -->
+    <section id="calendar">
+        <h2>Upcoming Training Sessions</h2>
+        <div id="calendar-container"></div>
+    </section>
+
+    <footer>
+        <p>For more details, visit our <a href="mailto:comments@techcorp.com">Feedback Page</a>.</p>
+    </footer>
+</body>
+</html>
